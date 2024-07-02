@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join</title>
+<style>
+    table {
+        width: 280px;
+        height: 700px;
+        margin: auto;
+        padding-top: 100px;
+    }
+    .email {
+        width: 127px;
+        height: 32px;
+        font-size: 15px;
+        border: 0;
+        border-color: lightgray;
+        border-radius: 15px;
+        outline: none;
+        padding-left: 10px;
+        background-color: rgb(233,233,233);
+    }
+    .text {
+        width: 250px;
+        height: 32px;
+        font-size: 15px;
+        border: 0;
+        border-radius: 15px;
+        outline: none;
+        padding-left: 10px;
+        background-color: rgb(233,233,233);
+    }
+    select {
+        width: 100px;
+        height: 32px;
+        font-size: 15px;
+        border: 1;
+        border-color: lightgray;
+        border-radius: 15px;
+        outline: none;
+        padding-left: 10px;
+    }
+    .btn {
+        width: 262px;
+        height: 32px;
+        font-size: 15px;
+        border: 0;
+        border-radius: 15px;
+        outline: none;
+        padding-left: 10px;
+        color: white;
+        background-color: black;
+    }
+    .btn:active {
+        width: 262px;
+        height: 32px;
+        font-size: 15px;
+        border: 0;
+        border-radius: 15px;
+        outline: none;
+        padding-left: 10px;
+        background-color: gray;
+    }
+
+    .list_back {
+        color: gray;
+        text-align: center;
+    }
+
+    a {
+        font-size: 12px;
+        color: darkgray;
+        text-decoration-line: none;
+    }
+    
+</style>
+</head>
+<body>
+<form action="login.html">
+    <table>
+    <tr>
+        <td><h2>회원가입</h2></td>
+    </tr>
+    <tr><td>아이디</td></tr> <!-- 아이디 입력란 -->
+    <tr><td><input type="text" class="text"></td></tr>
+    <tr><td>비밀번호</td></tr> <!-- 비밀번호 입력란 -->
+    <tr><td><input type="password" class="text"></td></tr>
+    <tr><td>이름</td></tr>  <!-- 이름 입력란 -->
+    <tr><td><input type="text" class="text"></td></tr>
+    <tr><td>생년월일</td></tr> <!-- 생년월일 입력란 -->
+    <tr><td><input type="date" class="text"></td></tr>
+    <tr><td>이메일</td></tr> <!-- 이메일 입력란 -->
+    <tr>
+        <td><input type="text" class="email"> @ 
+            <select>
+                <option>naver.com</option>
+                <option>gmail.com</option>
+                <option>daum.net</option>
+                <option>nate.com</option>
+            </select>
+        </td>
+    </tr>
+    <tr> <!-- 가입하기 버튼 -->
+        <td><input type="submit" value="가입하기" class="btn" onclick="alert('가입 성공!')"></td>
+    </tr>
+    <tr> <!-- 게시판으로 돌아가기 링크 -->
+        <td class="list_back"><a href="list.html">게시판으로 돌아가기</a></td>
+    </tr>
+    </table>
+</form>
+</body>
+</html>
